@@ -1,0 +1,50 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "ModalCamera",
+	"Description": "Provides a Camera system that supports transitions between modes on the camera responsibility chain.",
+	"Category": "Other",
+	"CreatedBy": "Chronicler",
+	"CreatedByURL": "https://www.chroniclersoftware.com",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": true,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "ModalCamera",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "GameplayAbilities",
+			"Enabled": true
+		},
+		{
+			"Name": "GameplayCameras",
+			"Enabled": true
+		},
+		{
+			"Name": "Interchange",
+			"Enabled": true
+		},
+		{
+			"Name": "ModularGameplay",
+			"Enabled": true
+		},
+		{
+			"Name": "ModularGameplayActors",
+			"Enabled": true
+		},
+		{
+			"Name": "ModularGameplayExperiences",
+			"Enabled": true
+		}
+	]
+}

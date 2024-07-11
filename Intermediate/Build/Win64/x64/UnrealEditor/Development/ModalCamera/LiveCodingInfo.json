@@ -1,0 +1,15 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.ModalCamera.cpp.obj": [
+			"CameraAssistInterface.gen.cpp.obj",
+			"CameraPenetrationAvoidanceFeeler.gen.cpp.obj",
+			"ModalCamera.init.gen.cpp.obj",
+			"CameraMode_ThirdPerson.cpp.obj",
+			"ModalCamera.cpp.obj",
+			"ModalCameraComponent.cpp.obj",
+			"ModalCameraMode.cpp.obj",
+			"ModalPlayerCameraManager.cpp.obj"
+		]
+	}
+}
