@@ -13,7 +13,7 @@
 
 template <class TClass> class TSubclassOf;
 
-DECLARE_DELEGATE_RetVal(TSubclassOf<UCameraMode>, FCameraModeDelegate);
+DECLARE_DELEGATE_RetVal(TSubclassOf<UModalCameraMode>, FCameraModeDelegate);
 
 
 /**
@@ -33,7 +33,7 @@ public:
 
 	// Default camera mode used by player controlled pawns.
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Camera")
-	TSubclassOf<UCameraMode> DefaultCameraMode;
+	TSubclassOf<UModalCameraMode> DefaultCameraMode;
 
 	// Returns the camera component if one exists on the specified actor.
 	UFUNCTION(BlueprintPure, Category = "Camera")
@@ -123,7 +123,7 @@ protected:
 	UPROPERTY()
 	TObjectPtr<UCameraModeStack> CameraModeStack;
 
-	TSubclassOf<UCameraMode> DetermineCameraMode() const;
+	TSubclassOf<UModalCameraMode> DetermineCameraMode() const;
 
 	// Offset applied to the field of view.  The offset is only for one frame, it gets cleared once it is applied.
 	float FieldOfViewOffset;
@@ -137,7 +137,7 @@ protected:
 protected:
 	/** Camera mode set by an ability. */
 	UPROPERTY()
-	TSubclassOf<UCameraMode> AbilityCameraMode;
+	TSubclassOf<UModalCameraMode> AbilityCameraMode;
 
 	/** Spec handle for the last ability to set a camera mode. */
 	FGameplayAbilitySpecHandle AbilityCameraModeOwningSpecHandle;

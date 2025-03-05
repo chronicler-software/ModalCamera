@@ -1,8 +1,11 @@
 // Copyright Chronicler.
 
-#include "..\Public\ModalCameraMode.h"
+#include "ModalCameraMode.h"
 
+#if ENGINE_MAJOR_VERSION == 5 && ENGINE_MINOR_VERSION >= 4
 #include "InterchangeAnimationDefinitions.h"
+#endif
+
 #include "ModalCameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Engine/Canvas.h"

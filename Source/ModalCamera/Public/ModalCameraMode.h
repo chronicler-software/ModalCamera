@@ -4,7 +4,6 @@
 
 #include "Engine/World.h"
 #include "GameplayTagContainer.h"
-#include "ModalCamera/Public/CameraModes/CameraMode.h"
 
 #include "ModalCameraMode.generated.h"
 
@@ -65,7 +64,7 @@ public:
  *	Base class for all camera modes.
  */
 UCLASS(Abstract, NotBlueprintable)
-class MODALCAMERA_API UModalCameraMode : public UCameraMode
+class MODALCAMERA_API UModalCameraMode : public UObject
 {
 	GENERATED_BODY()
 

@@ -1,12 +1,12 @@
 // Copyright Chronicler.
 
-#include "../Public/ModalCameraComponent.h"
+#include "ModalCameraComponent.h"
 
 #include "Engine/Canvas.h"
 #include "Engine/Engine.h"
 #include "GameFramework/Pawn.h"
 #include "GameFramework/PlayerController.h"
-#include "..\Public\ModalCameraMode.h"
+#include "ModalCameraMode.h"
 #include "ModularGameplayTags.h"
 #include "ModularPlayerState.h"
 #include "ActorComponent/ModularPawnComponent.h"
@@ -265,7 +265,7 @@ void UModalCameraComponent::CheckDefaultInitialization()
 	ContinueInitStateChain(StateChain);
 }
 
-TSubclassOf<UCameraMode> UModalCameraComponent::DetermineCameraMode() const
+TSubclassOf<UModalCameraMode> UModalCameraComponent::DetermineCameraMode() const
 {
 	if (AbilityCameraMode)
 	{
